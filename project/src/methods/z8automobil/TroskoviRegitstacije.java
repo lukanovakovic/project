@@ -11,6 +11,7 @@ public class TroskoviRegitstacije {
 				return 200;
 
 		} else {
+			System.out.println("Pokusaj novog brancha");
 			System.out.println("kubikaza nije u granicama dozvoljenog");
 			return 0;
 		}

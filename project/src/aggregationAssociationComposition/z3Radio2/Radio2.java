@@ -14,24 +14,24 @@ public class Radio2 {
 	}
 
 	public void podesiAmFrekvenciju(int novaAM) {
-		if (novaAM > 567 && novaAM < 1576)
+		if (novaAM >= 567 && novaAM <= 1576)
 			amFrekvencija = novaAM;
 		else
 			System.out.println("mora biti izmedju 567 i 1576");
 	}
 
 	public void podesiBand(char noviBand) {
-		if (noviBand == 'A')
-			band = 'A';
-		else if (noviBand == 'F')
-			band = 'F';
+//		if (noviBand == 'A')
+//			band = 'A';
+//		else if (noviBand == 'F')
+		if (noviBand == 'A' || noviBand == 'F')
+			band = noviBand;
 		else
 			System.out.println("mora da bude A ili F");
 	}
 
 	public void ispis() {
-		System.out.println(
-				"band = " + band + " amFrekvencija je =  " + amFrekvencija + " fmFrekvencija " + fmFrekvencija);
+		System.out.println("band = " + band + " AN je =  " + amFrekvencija + " fmFrekvencija " + fmFrekvencija);
 	}
 
 }

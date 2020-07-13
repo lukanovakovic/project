@@ -7,17 +7,18 @@ public class Televizor2 {
 	private boolean ukljucen = false;
 
 	public void ukljuci() {
-		if (ukljucen == false)
+		if (!ukljucen)
 			ukljucen = true;
 		else
 			System.out.print("televizor je vec ukljucen");
 	}
 
 	public void iskljuci() {
-		if (ukljucen == true)
+		if (ukljucen) {
 			ukljucen = false;
-		else
+		} else {
 			System.out.print("televizor je vec iskljucen");
+		}
 	}
 
 	public void pojacajTon() {
@@ -44,7 +45,7 @@ public class Televizor2 {
 	}
 
 	public void podesiProgramNanize() {
-		if (trenutniProgram < 1)
+		if (trenutniProgram > 1)
 			trenutniProgram--;
 		else
 			trenutniProgram = 99;

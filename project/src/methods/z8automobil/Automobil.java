@@ -7,6 +7,7 @@ public class Automobil {
 	private int kubikaza;
 	private int snaga;
 
+//
 	public String getModel() {
 		return model;
 	}

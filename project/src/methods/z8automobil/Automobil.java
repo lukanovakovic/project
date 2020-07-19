@@ -7,7 +7,14 @@ public class Automobil {
 	private int kubikaza;
 	private int snaga;
 
-//
+	public Automobil(String model, String marka, int kubikaza, int snaga) {
+		super();
+		this.model = model;
+		this.marka = marka;
+		this.kubikaza = kubikaza;
+		this.snaga = snaga;
+	}
+
 	public String getModel() {
 		return model;
 	}

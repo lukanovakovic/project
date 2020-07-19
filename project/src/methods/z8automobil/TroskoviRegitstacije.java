@@ -4,7 +4,7 @@ public class TroskoviRegitstacije {
 
 	static double obracunajDoprinos(Automobil auto) {
 
-		if (auto.getKubikaza() > 400 && auto.getKubikaza() < 1000) {
+		if (auto.getKubikaza() > 400 && auto.getKubikaza() < 10000) {
 			if (auto.getKubikaza() < 1000)
 				return 145.5;
 			else if (auto.getKubikaza() >= 1000 && auto.getKubikaza() < 1400)
@@ -39,6 +39,13 @@ public class TroskoviRegitstacije {
 			System.out.println("snaga nije u granicama dozvoljenog");
 			return 0;
 		}
+
+	}
+
+	static void ispisiSveTroskove(Automobil auto) {
+		double cenaOsiguranja = obracunajOsiguranje(auto);
+		double cenaDoprinosa = obracunajDoprinos(auto);
+		System.out.println("cena osiguranja je " + cenaOsiguranja + " cena doprinosa je " + cenaDoprinosa);
 
 	}
 }

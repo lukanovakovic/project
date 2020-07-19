@@ -15,9 +15,8 @@ public class TroskoviRegitstacije {
 			return 200.0;
 		else if (auto.getKubikaza() >= 1400 && auto.getKubikaza() < 2500)
 			return 250.0;
-		else {
+		else
 			return 413.3;
-		}
 
 	}
 
